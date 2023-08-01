@@ -1,0 +1,21 @@
+{
+  "name": "new_monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "web-start": "yarn workspace web start",
+    "web-nodeModules": "yarn workspace web install",
+    "mobile-nodeModules": "yarn workspace ExampleApp install",
+    "mobile-start": "yarn workspace ExampleApp start",
+    "mobile-pods": "yarn workspace ExampleApp pods",
+    "mobile-ios": "yarn workspace ExampleApp ios",
+    "mobile-android": "yarn workspace ExampleApp android",
+    "shared-build": "yarn workspace shared build",
+    "shared-nodeModules": "yarn workspace shared install"
+  }
+}
