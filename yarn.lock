@@ -2624,13 +2624,13 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*", "@types/jest@^27.5.2":
-  "integrity" "sha512-mpT8LJJ4CMeeahobofYWIjFo0xonRS/HfxnVEPMPFSQdGUt1uHCnoPT7Zhb+sjDU2wz0oKV0OLUR0WzrHNgfeA=="
-  "resolved" "https://registry.npmjs.org/@types/jest/-/jest-27.5.2.tgz"
-  "version" "27.5.2"
+"@types/jest@*":
+  "integrity" "sha512-1Nq7YrO/vJE/FYnqYyw0FS8LdrjExSgIiHyKg7xPpn+yi8Q4huZryKnkJatN1ZRH89Kw2v33/8ZMB7DuZeSLlA=="
+  "resolved" "https://registry.npmjs.org/@types/jest/-/jest-29.5.3.tgz"
+  "version" "29.5.3"
   dependencies:
-    "jest-matcher-utils" "^27.0.0"
-    "pretty-format" "^27.0.0"
+    "expect" "^29.0.0"
+    "pretty-format" "^29.0.0"
 
 "@types/json-schema@*", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   "integrity" "sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA=="
@@ -2651,11 +2651,6 @@
   "integrity" "sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-20.4.5.tgz"
   "version" "20.4.5"
-
-"@types/node@^16.18.39":
-  "integrity" "sha512-8q9ZexmdYYyc5/cfujaXb4YOucpQxAV4RMG0himLyDUOEr8Mr79VrqsFI+cQ2M2h89YIuy95lbxuYjxT4Hk4kQ=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-16.18.39.tgz"
-  "version" "16.18.39"
 
 "@types/parse-json@^4.0.0":
   "integrity" "sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA=="
@@ -2687,7 +2682,7 @@
   "resolved" "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.4.tgz"
   "version" "1.2.4"
 
-"@types/react-dom@^18.0.0", "@types/react-dom@^18.2.7":
+"@types/react-dom@^18.0.0":
   "integrity" "sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA=="
   "resolved" "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.7.tgz"
   "version" "18.2.7"
@@ -2701,7 +2696,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.24", "@types/react@^18.2.18":
+"@types/react@*", "@types/react@^18.0.24":
   "integrity" "sha512-da4NTSeBv/P34xoZPhtcLkmZuJ+oYaCxHmyHzwaDQo9RQPBeXV+06gEk2FpqEcsX9XrnNLvRpVh6bdavDSjtiQ=="
   "resolved" "https://registry.npmjs.org/@types/react/-/react-18.2.18.tgz"
   "version" "18.2.18"
@@ -5431,7 +5426,7 @@
     "jest-matcher-utils" "^27.5.1"
     "jest-message-util" "^27.5.1"
 
-"expect@^29.6.2":
+"expect@^29.0.0", "expect@^29.6.2":
   "integrity" "sha512-iAErsLxJ8C+S02QbLAwgSGSezLQK+XXRDt8IuFXFpwCNw2ECmzZSmjKcCaFVp5VRMk+WAvz6h6jokzEzBFZEuA=="
   "resolved" "https://registry.npmjs.org/expect/-/expect-29.6.2.tgz"
   "version" "29.6.2"
@@ -6991,16 +6986,6 @@
   dependencies:
     "jest-get-type" "^29.4.3"
     "pretty-format" "^29.6.2"
-
-"jest-matcher-utils@^27.0.0":
-  "integrity" "sha512-z2uTx/T6LBaCoNWNFWwChLBKYxTMcGBRjAt+2SbP929/Fflb9aa5LGma654Rz8z9HLxsrUaYzxE9T/EFIL/PAw=="
-  "resolved" "https://registry.npmjs.org/jest-matcher-utils/-/jest-matcher-utils-27.5.1.tgz"
-  "version" "27.5.1"
-  dependencies:
-    "chalk" "^4.0.0"
-    "jest-diff" "^27.5.1"
-    "jest-get-type" "^27.5.1"
-    "pretty-format" "^27.5.1"
 
 "jest-matcher-utils@^27.5.1":
   "integrity" "sha512-z2uTx/T6LBaCoNWNFWwChLBKYxTMcGBRjAt+2SbP929/Fflb9aa5LGma654Rz8z9HLxsrUaYzxE9T/EFIL/PAw=="
@@ -9489,7 +9474,7 @@
     "ansi-styles" "^4.0.0"
     "react-is" "^17.0.1"
 
-"pretty-format@^27.0.0", "pretty-format@^27.5.1":
+"pretty-format@^27.0.2":
   "integrity" "sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ=="
   "resolved" "https://registry.npmjs.org/pretty-format/-/pretty-format-27.5.1.tgz"
   "version" "27.5.1"
@@ -9498,7 +9483,7 @@
     "ansi-styles" "^5.0.0"
     "react-is" "^17.0.1"
 
-"pretty-format@^27.0.2":
+"pretty-format@^27.5.1":
   "integrity" "sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ=="
   "resolved" "https://registry.npmjs.org/pretty-format/-/pretty-format-27.5.1.tgz"
   "version" "27.5.1"
@@ -9517,7 +9502,7 @@
     "ansi-styles" "^5.0.0"
     "react-is" "^18.0.0"
 
-"pretty-format@^29.6.2":
+"pretty-format@^29.0.0", "pretty-format@^29.6.2":
   "integrity" "sha512-1q0oC8eRveTg5nnBEWMXAU2qpv65Gnuf2eCQzSjxpWFkPaPARwqZZDGuNE0zPAZfTCHzIk3A8dIjwlQKKLphyg=="
   "resolved" "https://registry.npmjs.org/pretty-format/-/pretty-format-29.6.2.tgz"
   "version" "29.6.2"
@@ -11197,11 +11182,6 @@
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
   "version" "4.9.5"
 
-"typescript@^4.9.5":
-  "integrity" "sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g=="
-  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
-  "version" "4.9.5"
-
 "uglify-es@^3.1.9":
   "integrity" "sha512-r+MU0rfv4L/0eeW3xZrd16t4NZfK8Ld4SWVglYBb7ez5uXFWHuVRs6xCTrf1yirs9a4j4Y27nn7SRfO6v67XsQ=="
   "resolved" "https://registry.npmjs.org/uglify-es/-/uglify-es-3.3.9.tgz"
@@ -11421,15 +11401,10 @@
     "@testing-library/jest-dom" "^5.17.0"
     "@testing-library/react" "^13.4.0"
     "@testing-library/user-event" "^13.5.0"
-    "@types/jest" "^27.5.2"
-    "@types/node" "^16.18.39"
-    "@types/react" "^18.2.18"
-    "@types/react-dom" "^18.2.7"
-    "cra-template-typescript" "1.2.0"
+    "cra-template" "1.2.0"
     "react" "^18.2.0"
     "react-dom" "^18.2.0"
     "react-scripts" "5.0.1"
-    "typescript" "^4.9.5"
     "web-vitals" "^2.1.4"
 
 "webidl-conversions@^3.0.0":
