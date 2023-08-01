@@ -17,7 +17,7 @@ const App = () => {
         <Text>Run Add function</Text>
       </TouchableOpacity>
       {datastored.map((item, index)=>(
-        <ListView name={item.name} id={item.id}>
+        <ListView key={index} name={item.name} id={item.id}>
         </ListView>
       ))}
     </View>

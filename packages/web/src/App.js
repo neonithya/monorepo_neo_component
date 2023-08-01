@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {datastored, add, ListView} from 'shared'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+        {datastored?.map((item, index) => (
+        < ListView name={item?.name} />
+      ))}
       </header>
     </div>
   );
