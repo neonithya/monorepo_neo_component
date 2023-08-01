@@ -20,7 +20,15 @@ export const courses = [
   {
     id: "101",
     courseName: "JavaScript",
-    questions: [{ qstn: "what is JavaScript" }],
+    questions: [
+      { qstn: "what is JavaScript" },
+      {
+        qstn: "Javascript is synchronous or Asynchronous  ? ",
+      },
+      {
+        qstn: "Javascript is single threaded or multi threaded?",
+      },
+    ],
   },
   {
     id: "102",
