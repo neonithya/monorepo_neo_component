@@ -4,12 +4,20 @@ import React from "react";
 type Props = {
   id: string;
   name: string;
+  style:{}
 };
 
 export const ListView = (props: Props) => {
   return (
-    <View style={styles.mainContainer}>
+    <View style={[styles.mainContainer, props?.style]}>
       <Text>{props?.id}</Text>
+      <Text>{props?.name}</Text>
+    </View>
+  );
+};
+export const List = (props: Props) => {
+  return (
+    <View style={[styles.mainContainer, props?.style]}>
       <Text>{props?.name}</Text>
     </View>
   );
@@ -17,9 +25,6 @@ export const ListView = (props: Props) => {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: "green",
-    margin: 20,
-    padding: 10,
-    width: "80%",
+    // padding: 10,
   },
 });

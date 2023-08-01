@@ -3,3 +3,10 @@ export declare const datastored: {
     category: string;
     name: string;
 }[];
+export declare const courses: {
+    id: string;
+    courseName: string;
+    questions: {
+        qstn: string;
+    }[];
+}[];
