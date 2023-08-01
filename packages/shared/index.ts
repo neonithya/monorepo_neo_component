@@ -1,3 +1,3 @@
-export const add = (a: number, b: number) => {
-	return a + b;
-}
+export * from './dataFile'
+export * from './usedFunctions'
+export * from './components'

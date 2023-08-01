@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
-import {add} from 'shared';
+import {add,datastored, ListView} from 'shared';
 
 
 const App = () => {
+  useEffect(()=>{
+    console.log('dataaa---->', datastored)
+  })
   return (
     <View>
       <TouchableOpacity
@@ -13,6 +16,10 @@ const App = () => {
         }}>
         <Text>Run Add function</Text>
       </TouchableOpacity>
+      {datastored.map((item, index)=>(
+        <ListView name={item.name} id={item.id}>
+        </ListView>
+      ))}
     </View>
   );
 };

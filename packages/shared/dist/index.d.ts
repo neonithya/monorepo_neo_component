@@ -1,1 +1,3 @@
-export declare const add: (a: number, b: number) => number;
+export * from './dataFile';
+export * from './usedFunctions';
+export * from './components';
