@@ -8,6 +8,7 @@ import {
   View,
   Dimensions,
   SafeAreaView,
+  
 } from 'react-native';
 import {add, datastored, ListView, CustomButton, courses, List} from 'shared';
 const {width} = Dimensions.get('window');
