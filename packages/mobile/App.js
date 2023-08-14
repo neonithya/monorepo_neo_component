@@ -8,17 +8,32 @@ import {
   View,
   Dimensions,
   SafeAreaView,
-  
 } from 'react-native';
 import {add, datastored, ListView, CustomButton, courses, List} from 'shared';
 const {width} = Dimensions.get('window');
 const itemWidth = width / 4;
+import firestore from '@react-native-firebase/firestore';
 
 const App = () => {
   const [selected, setSelected] = useState(courses[0]);
+
   useEffect(() => {
-    console.log('dataaa---->', datastored, courses);
-  });
+    // console.log('dataaa---->', datastored, courses,);
+
+    firestore()
+      .collection('courses')
+      .get()
+      .then(querySnapshot => {
+        console.log('Total courses: ', querySnapshot.size);
+        const dataget = querySnapshot.docs.map(doc => {
+          return doc.data();
+        });
+        
+        console.log('data get------', dataget);
+        
+      });
+  }, []);
+
   const selectItem = item => {
     setSelected(item);
   };
